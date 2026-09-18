@@ -52,5 +52,5 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 The `.exe` is produced with [PS2EXE](https://github.com/MScholtes/PS2EXE) by
 Markus Scholtes (originally by Ingo Karstein), MIT licensed. It is a build-time
-tool only — no PS2EXE code is redistributed here beyond the standard launcher
+tool only - no PS2EXE code is redistributed here beyond the standard launcher
 stub it generates.
