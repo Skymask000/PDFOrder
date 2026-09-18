@@ -1,0 +1,25 @@
+# Build output - the .exe ships on the Releases page, not in the tree
+*.exe
+
+# PDFsharp is fetched by build\build.ps1, never committed
+build/lib/
+
+# Working notes, not part of the project
+HANDOFF.md
+.superpowers/
+docs/superpowers/
+
+# Source art
+*.psd
+
+# Scratch
+*.tmp
+*.bak
+Backup/
+
+# Local build note - contains absolute paths
+create_.exe.txt
+
+# Superseded first-draft icon; PDFOrder_v2 is the one in use
+Icon/PDFOrder.ico
+Icon/PDFOrder.png
