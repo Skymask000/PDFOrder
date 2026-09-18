@@ -1159,7 +1159,8 @@ $btnGo.Add_Click({
 
 
 
-$script:TipUrl = 'https://revolut.me/rebe000'
+$script:TipUrl  = 'https://revolut.me/rebe000'
+$script:RepoUrl = 'https://github.com/Skymask000/PDFOrder'
 
 function Show-TipDialog {
     $dlg                 = New-Object System.Windows.Forms.Form
@@ -1219,6 +1220,29 @@ function Show-TipDialog {
             $y += $qr + 20
         } catch { }
     }
+
+    $cap           = New-Object System.Windows.Forms.Label
+    $cap.Text      = 'Source code, updates and issues:'
+    $cap.Location  = New-Object System.Drawing.Point($margin, $y)
+    $cap.Size      = New-Object System.Drawing.Size($contentW, 18)
+    $cap.TextAlign = 'MiddleCenter'
+    Style-Label $cap $textMuted
+    $dlg.Controls.Add($cap)
+    $y += 22
+
+    $repo                  = New-Object System.Windows.Forms.LinkLabel
+    $repo.Text             = 'github.com/Skymask000/PDFOrder'
+    $repo.Font             = New-Object System.Drawing.Font('Segoe UI', 10, [System.Drawing.FontStyle]::Bold)
+    $repo.Location         = New-Object System.Drawing.Point($margin, $y)
+    $repo.Size             = New-Object System.Drawing.Size($contentW, 24)
+    $repo.TextAlign        = 'MiddleCenter'
+    $repo.LinkColor        = $textLink
+    $repo.ActiveLinkColor  = $textLink
+    $repo.VisitedLinkColor = $textLink
+    $repo.BackColor        = [System.Drawing.Color]::Transparent
+    $repo.Add_LinkClicked({ Start-Process $script:RepoUrl })
+    $dlg.Controls.Add($repo)
+    $y += 34
 
     $okW         = 110
     $ok          = New-Object System.Windows.Forms.Button
