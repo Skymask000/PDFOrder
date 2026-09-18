@@ -1,4 +1,4 @@
-# PDF Order
+# <img src="Icon/PDFOrder_v2.png" width="36" align="middle" alt=""> PDF Order
 
 A small Windows app that puts a scanned PDF back into reading order.
 
