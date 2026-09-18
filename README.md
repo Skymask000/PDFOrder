@@ -64,6 +64,13 @@ Removals apply to the finished list wherever the page sits, so
 
 Whatever you type, the resulting order is shown before anything is written.
 
+## Before a file is loaded
+
+Nothing is editable until there is a PDF to act on, so the options stay greyed out
+and only the drop zone is live. Drop a file on it, or click it to browse.
+
+![PDF Order before a file is loaded](docs/screenshot-empty.png)
+
 ## Install
 
 ### Download
